@@ -1,6 +1,6 @@
 // funzione per generare numero random
 function sortPcRandomNumber(max, min = 1) {
-  const pcRandomNumber = Math.floor(Math.random() * (max - min) + (min + 1));
+  const pcRandomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
   return pcRandomNumber;
 }
 
