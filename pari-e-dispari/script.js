@@ -19,14 +19,12 @@ function evenOrOdd(firstNumber, secondNumber) {
 
 // scelta dell' utente tra pari e dispari con controllo effettivo dell'inserimento
 let userChoice = prompt("scegli tra pari o dispari: ");
-
 while (!isNaN(userChoice) || userChoice !== "pari" && userChoice !== "dispari") {
   userChoice = prompt("scegli tra pari o dispari: ");
 }
 
 // scelta del numero da parte dell'utente
 let userNumber = parseInt(prompt("scegli un numero da 1 a 5"));
-
 while (userNumber > 5 || userNumber < 1 || isNaN(userNumber)) {
   userNumber = parseInt(prompt("scegli un numero da 1 a 5"));
 }
